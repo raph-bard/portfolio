@@ -2,6 +2,7 @@ import CvTitle from "./CvTitle";
 import Icon from "./Icon";
 import InfoButton from "./InfoButton";
 import PrintButton from "./PrintButton";
+import profilePicture from "/src/assets/pdp-raphael-bard.jpg";
 
 function Curiculum() {
   return (
@@ -11,7 +12,7 @@ function Curiculum() {
           <img
             id="profile-picture"
             className="m-auto mb-20"
-            src="../src/assets/pdp-raphael-bard.jpg"
+            src={profilePicture}
             alt="Raphaël Bard"
           />
           <div className="sm-d-block pr-d-none">
@@ -35,10 +36,16 @@ function Curiculum() {
                 raphael.bard.pro@gmail.com
               </a>
             </li>
-            <li>
-              <a href="https://github.com/raph-bard">
+            <li className="pr-d-none">
+              <a target="_blank" href="https://github.com/raph-bard">
                 <Icon icon="github" />
                 Github
+              </a>
+            </li>
+            <li className="d-none pr-d-block">
+              <a href="https://github.com/raph-bard">
+                <Icon icon="github" />
+                github.com/raph-bard
               </a>
             </li>
           </ul>
