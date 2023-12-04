@@ -1,6 +1,6 @@
 {
-  "homepage": "https://raph-bard.github.io/portfolio/",
-  "name": "portfolio",
+  "homepage": "https://raph-bard.github.io/",
+  "name": "portfolio-v1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
