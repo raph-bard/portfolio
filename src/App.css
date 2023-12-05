@@ -421,6 +421,7 @@ a:hover .icon svg {
   .container-A4 .is-third-column {
     padding: 40px 15px 10px 30px;
     width: 35%;
+    border: none;
   }
   .container-A4 .is-third-column .contact-list a,
   .container-A4 .is-third-column .contact-list li {
