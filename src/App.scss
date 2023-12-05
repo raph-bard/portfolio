@@ -272,15 +272,15 @@ h1 {
 // CURICULUM VITAE
 
 .container-A4 {
-  img {
+  #profile-picture {
     border-radius: 50%;
   }
   .is-third-column {
-    padding: 40px 50px;
+    padding: 40px 30px;
     background-color: $dark-blue;
   }
   .is-sixth-column {
-    padding: 40px 60px;
+    padding: 40px 30px;
     background-color: $medium-blue;
   }
   h3 {
@@ -297,6 +297,10 @@ h1 {
       top: 0;
       right: 0;
     }
+  }
+  #qr-code {
+    max-width: 100px;
+    margin: 50px auto 0;
   }
 }
 

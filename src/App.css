@@ -272,15 +272,15 @@ a:hover .icon svg {
   transition: opacity 0.3s ease-in-out;
 }
 
-.container-A4 img {
+.container-A4 #profile-picture {
   border-radius: 50%;
 }
 .container-A4 .is-third-column {
-  padding: 40px 50px;
+  padding: 40px 30px;
   background-color: #11273f;
 }
 .container-A4 .is-sixth-column {
-  padding: 40px 60px;
+  padding: 40px 30px;
   background-color: #152e4c;
 }
 .container-A4 h3 {
@@ -296,6 +296,10 @@ a:hover .icon svg {
   position: absolute;
   top: 0;
   right: 0;
+}
+.container-A4 #qr-code {
+  max-width: 100px;
+  margin: 50px auto 0;
 }
 
 #profile-picture {

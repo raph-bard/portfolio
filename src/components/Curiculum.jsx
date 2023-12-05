@@ -3,6 +3,7 @@ import Icon from "./Icon";
 import InfoButton from "./InfoButton";
 import PrintButton from "./PrintButton";
 import profilePicture from "/src/assets/pdp-raphael-bard.jpg";
+import qrCode from "/src/assets/qrcode.png";
 
 function Curiculum() {
   return (
@@ -80,6 +81,9 @@ function Curiculum() {
               <b>Anglais</b> : B2
             </li>
           </ul>
+          <div id="qr-code" className="d-none pr-d-block">
+            <img src={qrCode} alt="https://raphael-bard.vercel.app/"></img>
+          </div>
         </div>
         <div className="triangle sm-d-block pr-d-none"></div>
         <div className="triangle-2 sm-d-block pr-d-none"></div>
