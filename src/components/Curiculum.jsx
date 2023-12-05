@@ -82,7 +82,12 @@ function Curiculum() {
             </li>
           </ul>
           <div id="qr-code" className="d-none pr-d-block">
-            <img src={qrCode} alt="https://raphael-bard.vercel.app/"></img>
+            <img src={qrCode} alt="https://raphael-bard.vercel.app/" />
+            <p>
+              Plus d'informations sur
+              <br />
+              https://raphael-bard.vercel.app/
+            </p>
           </div>
         </div>
         <div className="triangle sm-d-block pr-d-none"></div>
@@ -103,7 +108,9 @@ function Curiculum() {
           <ul className="dot-list mb-20">
             <li>Gestion et analyse des problèmes clients sur logiciels</li>
             <li>Intervention en clientèle</li>
-            <li>Rédaction des rapports pour le Niveau 3</li>
+            <li className="pr-d-none">
+              Rédaction des rapports pour le Niveau 3
+            </li>
             <li className="pr-d-none">Tests versions en fin de sprints</li>
           </ul>
           <h3>
@@ -138,7 +145,7 @@ function Curiculum() {
             <div className="is-fifth-column">
               <h3 className="mb-10">Hard Skills</h3>
               <ul className="skills mb-20">
-                <li>
+                <li className="pr-d-none">
                   <Icon icon="html" />
                   HTML <span className="grey-text">4 ans</span>
                 </li>
@@ -175,10 +182,12 @@ function Curiculum() {
             <div className="is-fifth-column soft-skills">
               <h3 className="mb-10">Soft Skills</h3>
               <ul className="mb-20">
-                <li>Reflexions analytiques</li>
-                <li>Gestion de projet</li>
-                <li>Design thinking</li>
-                <li>Travail en équipe</li>
+                <li>Sens de l'écoute</li>
+                <li>Persévérance</li>
+                <li>Esprit d'équipe</li>
+                <li>Adaptabilité</li>
+                <li>Sens de l'analyse</li>
+                <li>Curiosité</li>
               </ul>
             </div>
             <PrintButton></PrintButton>
