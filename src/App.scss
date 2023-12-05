@@ -249,6 +249,7 @@ h1 {
       opacity: 0;
       -webkit-box-shadow: 4px 4px 9px 4px rgba(0, 0, 0, 0.49);
       box-shadow: 4px 4px 9px 4px rgba(0, 0, 0, 0.49);
+      transition: all 0.3s ease-in-out;
 
       a {
         color: black;
@@ -261,7 +262,6 @@ h1 {
         z-index: 10;
         opacity: 1;
       }
-      transition: all 0.3s ease-in-out;
       &.active {
         transition: opacity 0.3s ease-in-out;
       }
@@ -443,7 +443,6 @@ h1 {
     }
     .is-third-column {
       padding: 40px 15px 10px 30px;
-      border-right: 2px solid black;
       width: 35%;
 
       .contact-list {
@@ -456,6 +455,7 @@ h1 {
     }
     .is-sixth-column {
       padding: 40px 30px 0 20px;
+      border-left: 2px solid black;
       p b {
         font-size: 12px;
       }
