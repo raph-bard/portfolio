@@ -9,7 +9,7 @@ export default function CvTitle() {
       </h1>
       <p className="description grey-text mb-20">
         <b>      
-          Développeur Web Junior en quête d'une alternance, j'ai initialement travaillé en tant qu'intégrateur Web. Cherchant à élargir mes compétences, j'ai entrepris une formation à la Wild Code School Bordeaux, me spécialisant désormais dans le développement Web et Web Mobile. Cette transition m'a permis d'approfondir mes connaissances et de renforcer ma capacité à concrétiser des conceptions visuelles en solutions fonctionnelles.
+          Développeur Web Junior en quête d'une alternance, j'ai initialement travaillé en tant qu'intégrateur Web. Cherchant à élargir mes compétences, j'ai entrepris une formation à la Wild Code School, me spécialisant désormais dans le développement Web et Web Mobile. Cette transition m'a permis d'approfondir mes connaissances et de renforcer ma capacité à concrétiser des conceptions visuelles en solutions fonctionnelles.
         </b>
       </p>
       <hr className="mb-20" />
