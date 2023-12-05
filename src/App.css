@@ -420,8 +420,8 @@ a:hover .icon svg {
   }
   .container-A4 .is-third-column {
     padding: 40px 15px 10px 30px;
-    border-right: 2px solid black;
     width: 35%;
+    border: none;
   }
   .container-A4 .is-third-column .contact-list a,
   .container-A4 .is-third-column .contact-list li {
@@ -430,6 +430,7 @@ a:hover .icon svg {
   }
   .container-A4 .is-sixth-column {
     padding: 40px 30px 0 20px;
+    border-left: 2px solid black;
   }
   .container-A4 .is-sixth-column p b {
     font-size: 12px;
