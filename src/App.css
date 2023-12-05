@@ -276,11 +276,11 @@ a:hover .icon svg {
   border-radius: 50%;
 }
 .container-A4 .is-third-column {
-  padding: 40px 30px;
+  padding: 40px 50px;
   background-color: #11273f;
 }
 .container-A4 .is-sixth-column {
-  padding: 40px 30px;
+  padding: 40px 60px;
   background-color: #152e4c;
 }
 .container-A4 h3 {
@@ -298,8 +298,17 @@ a:hover .icon svg {
   right: 0;
 }
 .container-A4 #qr-code {
+  width: 100%;
+  text-align: center;
+}
+.container-A4 #qr-code img {
   max-width: 100px;
   margin: 50px auto 0;
+}
+.container-A4 #qr-code p {
+  font-size: 10px;
+  text-wrap: nowrap;
+  text-align: center;
 }
 
 #profile-picture {
@@ -356,14 +365,24 @@ a:hover .icon svg {
   }
 }
 @media screen and (min-width: 1000px), print {
-  .is-third-column {
+  .container-A4 #profile-picture {
+    border-radius: 50%;
+  }
+  .container-A4 .is-third-column {
     width: 32.5%;
+    padding: 40px 50px;
+    background-color: #11273f;
+  }
+  .container-A4 .is-sixth-column {
+    width: 77.5%;
+    padding: 40px 60px;
+    background-color: #152e4c;
   }
   .is-fifth-column {
     width: 50%;
   }
-  .is-sixth-column {
-    width: 77.5%;
+  .description {
+    font-size: 14px;
   }
   .skills {
     padding-right: 70px;
