@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav className="pr-d-none">
+      <nav className="d-none pr-d-none">
         <Link to="/">Home</Link>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/curiculum">Curiculum Vitae</Link>

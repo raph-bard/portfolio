@@ -68,6 +68,10 @@ hr {
   width: 100%;
 }
 
+.is-fifth-column:nth-child(odd) {
+  padding-right: 16px !important;
+}
+
 .sm-d-block,
 .tb-d-flex {
   display: block;
@@ -147,7 +151,7 @@ h1 b {
 }
 
 .grey-text {
-  color: #435c7b;
+  color: #95a1af;
 }
 
 .tri-list {
@@ -385,7 +389,7 @@ a:hover .icon svg {
     font-size: 14px;
   }
   .skills {
-    padding-right: 70px;
+    padding-right: 40px;
     margin-bottom: 0;
   }
   .skills span {
@@ -398,7 +402,7 @@ a:hover .icon svg {
 @media print {
   @page {
     margin: 0;
-    transform: scale(0.75);
+    transform: scale(0.68);
   }
   h1 b {
     line-height: 22px;

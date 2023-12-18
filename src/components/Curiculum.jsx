@@ -58,28 +58,34 @@ function Curiculum() {
                 <b>Développeur Web & Web Mobile</b>
               </li>
               <li className="blue-text">Wild Code School Bordeaux</li>
-              <li className="grey-text">2023-2024</li>
+              <li className="grey-text">Bootcamp 5 mois 2023-2024</li>
             </ul>
             <InfoButton>
-              Titre Professionnel Développeur Web et Web Mobile <br />
+              RNCP37674 - TP - Développeur Web & Web mobile
+              <br />
               (Niveau 5 - Bac+2)
             </InfoButton>
           </div>
           <ul className="tri-list mb-20">
             <li>
-              <b>BTS Service Informatique aux Organisations</b>
+              <b>BTS Service Informatique aux Organisation</b>
             </li>
             <li className="blue-text">Ynov Bordeaux</li>
             <li className="grey-text">2015-2017</li>
           </ul>
           <h2 className="blue-title mb-20">Langues</h2>
-          <ul>
+          <ul className="mb-20">
             <li>
               <b>Français</b> : langue maternelle
             </li>
             <li>
               <b>Anglais</b> : B2
             </li>
+          </ul>
+          <h2 className="blue-title mb-20">Loisirs</h2>
+          <ul>
+            <li>DJ Electro / MAO</li>
+            <li>Jeux-Vidéos compétitifs</li>
           </ul>
           <div id="qr-code" className="d-none pr-d-block">
             <img src={qrCode} alt="https://raphael-bard.vercel.app/" />
@@ -96,48 +102,74 @@ function Curiculum() {
           <div className="sm-d-none pr-d-block">
             <CvTitle />
           </div>
+          <h2 className="blue-title mb-20">Projets</h2>
+          <div className="tb-d-flex pr-d-flex">
+            <div className="is-fifth-column">
+              <p className="mb-10">
+                <b>Project Fullstack - Street-Arts Hunters</b>
+              </p>
+              <ul className="dot-list mb-20">
+                <li>
+                  Chasse aux street-arts avec Map + Prise de photo en temps réél
+                </li>
+                <li>Outils : React, Node/Express, Github, MySql</li>
+              </ul>
+              <p className="mb-10">
+                <b>Projet React - Elemen5</b>
+              </p>
+              <ul className="dot-list mb-20">
+                <li>
+                  Appel de l'API TMDB pour avoir un affichage de films et séries
+                </li>
+                <li>Outils : React, JS</li>
+              </ul>
+            </div>
+            <div className="is-fifth-column">
+              <p className="mb-10">
+                <b>Hackaton 48h - Noëllissime</b>
+              </p>
+              <ul className="dot-list mb-20">
+                <li>Réalisation d'un Calendrier de l'Avent interactif</li>
+                <li>
+                  Outils : React, JS - Collaboration avec promos Data et PHP
+                </li>
+                <li>Prix du meilleur Design</li>
+              </ul>
+              <p className="mb-10">
+                <b>Projet Frontend - Rasta Rockets</b>
+              </p>
+              <ul className="dot-list mb-20">
+                <li>Site web pour référencer les bars du quartier</li>
+                <li>Outils : HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+          </div>
+          <hr className="mb-20" />
           <h2 className="blue-title mb-20">Expériences professionnelles</h2>
-          <h3>
-            Technicien Support Logiciel{" "}
-            <span className="grey-text">2022 - 2023</span>
-          </h3>
-          <p className="blue-text mb-20">Deal informatique</p>
-          <p className="mb-10">
-            Support client de niveau 2 sur logiciel de comptabilité
-          </p>
-          <ul className="dot-list mb-20">
-            <li>Gestion et analyse des problèmes clients sur logiciels</li>
-            <li>Intervention en clientèle</li>
-            <li className="pr-d-none">
-              Rédaction des rapports pour le Niveau 3
-            </li>
-            <li className="pr-d-none">Tests versions en fin de sprints</li>
-          </ul>
-          <h3>
-            Technicien Support et Déploiement Client{" "}
-            <span className="grey-text">2021 - 2022</span>
-          </h3>
-          <p className="blue-text mb-20">Compagnie Fiduciaire</p>
-          <p className="mb-10">
-            Support client de niveau 1 sur logiciels de comptabilité
-          </p>
-          <ul className="dot-list mb-20">
-            <li>Support Client</li>
-            <li>Dépannage et assistance sur logiciels de comptabilité</li>
-            <li>Déploiement client et paramétrages logiciels</li>
-            <li className="pr-d-none">Formateur client sur logiciels</li>
-            <li className="pr-d-none">Ticketing (Jira)</li>
-          </ul>
           <h3>
             Intégrateur Web <span className="grey-text">2017 - 2020</span>
           </h3>
           <p className="blue-text mb-10">Freelance</p>
           <p className="mb-10">Intégration Web à partir de maquettes</p>
           <ul className="dot-list mb-20">
-            <li>Intégration Web (HTML/CSS/JS)</li>
-            <li>Gestion de Projet</li>
+            <li>Intégration Web (HTML/CSS/JQuery)</li>
+            <li>En collaboration avec agences web sur 25/30 projets</li>
             <li>Fromscratch/Wordpress</li>
-            <li>Formation Clients</li>
+          </ul>
+          <h3>
+            Technicien Support et Déploiement Client{" "}
+            <span className="grey-text">2021 - 2023</span>
+          </h3>
+          <p className="blue-text mb-20">
+            Compagnie Fiduciaire, Deal Informatique
+          </p>
+          <p className="mb-10">
+            Support client de niveau 1 puis 2 sur logiciels de comptabilité
+          </p>
+          <ul className="dot-list mb-20">
+            <li>Support & Formations client</li>
+            <li>Déploiement client et paramétrages logiciels</li>
+            <li className="pr-d-none">Ticketing (Jira)</li>
           </ul>
           <hr className="mb-20" />
           <h2 className="blue-title mb-20">Compétences</h2>
@@ -145,49 +177,55 @@ function Curiculum() {
             <div className="is-fifth-column">
               <h3 className="mb-10">Hard Skills</h3>
               <ul className="skills mb-20">
+                <p className="mb-10">
+                  <b>Maitrisé</b>
+                </p>
                 <li className="pr-d-none">
                   <Icon icon="html" />
-                  HTML <span className="grey-text">4 ans</span>
+                  HTML
                 </li>
-                <li>
+                <li className="mb-10">
                   <Icon icon="css" />
-                  CSS/SASS/LESS <span className="grey-text">4 ans</span>
+                  CSS/SASS/LESS
                 </li>
+                <p className="mb-10">
+                  <b>En cours d'apprentissage</b>
+                </p>
                 <li>
                   <Icon icon="javascript" />
-                  Javascript <span className="grey-text">~ 1 an</span>
+                  Javascript
                 </li>
                 <li>
                   <Icon icon="react" />
-                  React <span className="grey-text">Débutant</span>
+                  React
                 </li>
                 <li>
                   <Icon icon="node" />
-                  Node <span className="grey-text">Débutant</span>
+                  Node
                 </li>
                 <li>
                   <Icon icon="github" />
-                  Git/Github <span className="grey-text">~ 1 an</span>
+                  Git/Github
                 </li>
-                <li>
+                <li className="pr-d-none">
                   <Icon icon="lock" />
-                  Jest <span className="grey-text">Débutant</span>
+                  Jest
                 </li>
                 <li>
                   <Icon icon="database" />
-                  SQL/MySQL <span className="grey-text">Débutant</span>
+                  SQL/MySQL
                 </li>
               </ul>
             </div>
             <div className="is-fifth-column soft-skills">
               <h3 className="mb-10">Soft Skills</h3>
               <ul className="mb-20">
-                <li>Sens de l'écoute</li>
-                <li>Persévérance</li>
-                <li>Esprit d'équipe</li>
-                <li>Adaptabilité</li>
-                <li>Sens de l'analyse</li>
+                <li>Autonomie</li>
                 <li>Curiosité</li>
+                <li>Persévérance</li>
+                <li>Travail en équipe</li>
+                <li>Créativité</li>
+                <li>Adaptabilité</li>
               </ul>
             </div>
             <PrintButton></PrintButton>
