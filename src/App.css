@@ -122,6 +122,10 @@ hr {
   margin-bottom: 70px;
 }
 
+.ml-6 {
+  margin-left: 6px;
+}
+
 h1 {
   line-height: 30px;
 }
@@ -189,7 +193,7 @@ h1 b {
 
 .icon {
   display: inline-block;
-  vertical-align: sub;
+  vertical-align: top;
   width: 16px;
   height: 16px;
   background-size: contain;

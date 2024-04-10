@@ -117,6 +117,10 @@ hr {
   margin-bottom: 70px;
 }
 
+.ml-6 {
+  margin-left: 6px;
+}
+
 // general style
 
 h1 {
@@ -187,7 +191,7 @@ h1 {
 
 .icon {
   display: inline-block;
-  vertical-align: sub;
+  vertical-align: top;
   width: 16px;
   height: 16px;
   background-size: contain;

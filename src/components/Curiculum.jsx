@@ -55,6 +55,15 @@ function Curiculum() {
           <div className="has-infos">
             <ul className="tri-list mb-20">
               <li>
+                <b>POEC Java/Angular</b>
+              </li>
+              <li className="blue-text">Wild Code School Bordeaux</li>
+              <li className="grey-text">Bootcamp 3 mois 2024</li>
+            </ul>
+          </div>
+          <div className="has-infos">
+            <ul className="tri-list mb-20">
+              <li>
                 <b>Développeur Web & Web Mobile</b>
               </li>
               <li className="blue-text">Wild Code School Bordeaux</li>
@@ -84,7 +93,7 @@ function Curiculum() {
           </ul>
           <h2 className="blue-title mb-20">Loisirs</h2>
           <ul>
-            <li>DJ Electro / MAO</li>
+            <li>MAO</li>
             <li>Jeux-Vidéos compétitifs</li>
           </ul>
           <div id="qr-code" className="d-none pr-d-block">
@@ -106,7 +115,7 @@ function Curiculum() {
           <div className="tb-d-flex pr-d-flex">
             <div className="is-fifth-column">
               <p className="mb-10">
-                <b>Project Fullstack - Street-Arts Hunters</b>
+                <b>Project Fullstack - Street-Art Hunters</b>
               </p>
               <ul className="dot-list mb-20">
                 <li>
@@ -115,7 +124,7 @@ function Curiculum() {
                 <li>Outils : React, Node/Express, Github, MySql</li>
               </ul>
               <p className="mb-10">
-                <b>Projet React - Elemen5</b>
+                <b>Projet React - Elemen5 <a className="ml-6" href="https://2023-09-js-bdx-p2-5-elemens.vercel.app/" target="_blank"><Icon icon="web"/></a></b>
               </p>
               <ul className="dot-list mb-20">
                 <li>
@@ -136,7 +145,7 @@ function Curiculum() {
                 <li>Prix du meilleur Design</li>
               </ul>
               <p className="mb-10">
-                <b>Projet Frontend - Rasta Rockets</b>
+                <b>Projet Frontend - Rasta Rockets <a className="ml-6" href="https://raph-bard.github.io/rasta-rocket/index.html" target="_blank"><Icon icon="web"/></a></b>
               </p>
               <ul className="dot-list mb-20">
                 <li>Site web pour référencer les bars du quartier</li>
@@ -196,12 +205,20 @@ function Curiculum() {
                   Javascript
                 </li>
                 <li>
+                  <Icon icon="angular" />
+                  Angular
+                </li>
+                <li>
                   <Icon icon="react" />
                   React
                 </li>
                 <li>
+                  <Icon icon="java" />
+                  Java/Spring
+                </li>
+                <li>
                   <Icon icon="node" />
-                  Node
+                  Node/Express
                 </li>
                 <li>
                   <Icon icon="github" />
@@ -209,11 +226,11 @@ function Curiculum() {
                 </li>
                 <li className="pr-d-none">
                   <Icon icon="lock" />
-                  Jest
+                  Jest/Supertest
                 </li>
                 <li>
                   <Icon icon="database" />
-                  SQL/MySQL
+                  MySQL
                 </li>
               </ul>
             </div>

@@ -4,7 +4,7 @@ export default function CvTitle() {
       <h1 className="mb-10">
         Raphaël Bard <br />
         <b className="blue-text">
-          Développeur Web FullStack Junior - Recherche alternance
+          Développeur Web FullStack Junior - Recherche alternance/stage
         </b>
       </h1>
       <p className="description grey-text mb-20">
