@@ -13,6 +13,7 @@ export default function ContactForm() {
   });
 
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,6 +26,7 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
+    setErrorMessage(""); // reset
 
     try {
       const res = await fetch("/api/contact", {
@@ -35,21 +37,25 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
+      const result = await res.json();
+
       if (res.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
       } else {
         setStatus("error");
+        setErrorMessage(result?.error || "Une erreur est survenue.");
       }
     } catch (err) {
       console.error(err);
       setStatus("error");
+      setErrorMessage("Erreur réseau ou serveur.");
     }
   };
 
   return (
     <>
-    <SectionTitle>Contactez-moi !</SectionTitle>
+      <SectionTitle>Contactez-moi !</SectionTitle>
       <form onSubmit={handleSubmit} className="w-full mx-auto my-12">
         <FormField
           id="name"
@@ -78,8 +84,12 @@ export default function ContactForm() {
           Envoyer
         </Button>
 
-        {status === "success" && <p className="text-green-600 mt-4">Message envoyé !</p>}
-        {status === "error" && <p className="text-red-600 mt-4">Une erreur est survenue.</p>}
+        {status === "success" && (
+          <p className="text-green-600 mt-4">Message envoyé !</p>
+        )}
+        {status === "error" && (
+          <p className="text-red-600 mt-4">{errorMessage}</p>
+        )}
       </form>
     </>
   );
