@@ -77,8 +77,8 @@ export const ColoredButtons: Story = {
   },
   render: () => (
     <div className="flex gap-2">
-      {meta.argTypes?.variant?.options?.map((variant, index) => (
-      <Button key={index} className='capitalize' variant={variant}>{variant} button</Button>
+      {meta.argTypes?.variant?.options?.map((variant) => (
+      <Button key={variant} className='capitalize' variant={variant}>{variant} button</Button>
       ))}
     </div>
   ),
