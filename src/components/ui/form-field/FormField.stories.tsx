@@ -18,23 +18,30 @@ export default meta;
 
 type Story = StoryObj<typeof FormField>;
 
+type LocalProps = Omit<React.ComponentProps<typeof FormField>, 'value' | 'onChange'> & {
+  initialValue?: string;
+};
+
+const StatefulFormField = ({ initialValue = '', ...props }: LocalProps) => {
+  const [value, setValue] = useState(initialValue);
+  return (
+    <FormField
+      {...props}
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+};
+
 export const AllFields: Story = {
-  args: {
-    id: 'field',
-    label: 'Label',
-    type: 'text',
-    value: '',
-  },
-  render: (args) => {
-    const [value, setValue] = useState(args.value || '');
-    return (
-      <FormField
-        {...args}
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    );
-  },
+  render: () => (
+    <StatefulFormField
+      id="field"
+      label="Label"
+      type="text"
+      initialValue=""
+    />
+  ),
   parameters: {
     docs: {
       page: null,
@@ -42,48 +49,34 @@ export const AllFields: Story = {
   },
 };
 
+
 export const Text: Story = {
-  render: () => {
-    const [value, setValue] = useState('');
-    return (
-      <FormField
-        id="text"
-        label="Texte"
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    );
-  },
+  render: () => (
+    <StatefulFormField
+      id="text"
+      label="Texte"
+      type="text"
+    />
+  ),
 };
 
 export const Email: Story = {
-  render: () => {
-    const [value, setValue] = useState('');
-    return (
-      <FormField
-        id="email"
-        label="Email"
-        type="email"
-        required
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    );
-  },
+  render: () => (
+    <StatefulFormField
+      id="email"
+      label="Email"
+      type="email"
+      required
+    />
+  ),
 };
 
 export const Textarea: Story = {
-  render: () => {
-    const [value, setValue] = useState('');
-    return (
-      <FormField
-        id="message"
-        label="Message"
-        type="textarea"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-    );
-  },
+  render: () => (
+    <StatefulFormField
+      id="message"
+      label="Message"
+      type="textarea"
+    />
+  ),
 };
